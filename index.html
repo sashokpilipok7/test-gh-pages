@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fast&Safe — Вантажні перевезення</title>
+
+  <style>
+    :root {
+      --bg-color: #111;
+      --accent-color: #fdd835; /* Яскраво-жовтий */
+      --text-color: #fff;
+      --text-muted: #ccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, main, footer{
+        max-width:960px;
+        margin: 0 auto;
+    }
+    header{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    header, footer {
+      background-color: #000;
+      padding: 20px;
+    }
+
+    header .logo, footer .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+  
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+    
+
+    main {
+      padding: 40px 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+
+    #about{
+        display: flex;
+        gap:20px;
+        align-items:center;
+    }
+    #advantages{
+        text-align: center;
+    }
+    #advantages img{
+        width:80px;
+    }
+
+    #advantages ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 60px;
+    }
+
+       #advantages ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       #reviews h2{
+        text-align:center;
+       }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2, section h3, section h4 {
+      color: var(--accent-color);
+      margin-bottom: 20px;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .carousel {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .carousel .review {
+      margin-bottom: 15px;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    .footer{
+        display:flex;
+        flex-direction:column;
+    }
+
+    footer .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+     footer .footer__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    footer #contacts ul {
+      padding-left: 20px;
+    }
+
+    .partners {
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <div class="logo">Fast&Safe</div>
+    <nav>
+      <ul>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#advantages">Переваги</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Тіло -->
+  <main>
+    <!-- Секція про нас -->
+    <section id="about">
+      <img class="about__first" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/FlixBus_Setra_S_431_DT_-_Berlin_Alexanderplatz.jpg/330px-FlixBus_Setra_S_431_DT_-_Berlin_Alexanderplatz.jpg" alt="Про нас" />
+     <div class="about__second">
+         <h2>Хто ми такі</h2>
+        <p>Ми — компанія з вантажних перевезень Fast&Safe, що забезпечує надійність, швидкість і безпеку.</p>
+     </div>
+    </section>
+
+    <!-- Секція переваги -->
+    <section id="advantages">
+      <h2>Наші переваги</h2>
+      <ul>
+        <li><img src="https://learn.logikaschool.com/uploads/student/5375404/67f928c760183.png">Швидка доставка по Україні</li>
+        <li><img src="https://learn.logikaschool.com/uploads/student/5375404/67f928c760183.png"> Гарантія збереження вантажу</li>
+        <li><img src="https://learn.logikaschool.com/uploads/student/5375404/67f928c760183.png">Доступні ціни</li>
+      </ul>
+    </section>
+
+    <!-- Секція відгуки -->
+    <section id="reviews">
+      <h2>Відгуки клієнтів</h2>
+      <div class="carousel">
+        <!-- Тут буде карусель -->
+        <div class="review">"Все супер! Доставили вчасно!"</div>
+        <div class="review">"Рекомендую Fast&Safe!"</div>
+        <div class="review">"Надійна компанія, користуюсь постійно."</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-top">
+      <div class="logo">Fast&Safe</div>
+      <nav>
+        <ul>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#advantages">Переваги</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+     <div class="footer__bottom">
+    <div id="contacts">
+      <h3>Контакти</h3>
+      <ul>
+        <li>Телефон: +38 (067) 123-45-67</li>
+        <li>Email: info@fastsafe.ua</li>
+        <li>Адреса: Київ, Україна</li>
+      </ul>
+    </div>
+    <div class="partners">
+      <h4>Наші партнери</h4>
+      <p>Логотипи партнерів або назви</p>
+    </div>
+     </div>
+  </footer>
+</body>
+</html>
